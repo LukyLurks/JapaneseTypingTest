@@ -1,0 +1,101 @@
+html * {
+  font-family: monospace;
+  font-size: 1.15rem;
+}
+
+html {
+  height: 100%;
+  background-color: hsl(0, 0%, 95%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
+  max-width: 40rem;
+  margin: auto;
+}
+
+header,
+footer {
+  margin: 5%;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#typing-area {
+  background-color: hsl(0, 0%, 89%);
+  color: black;
+  padding: 4%;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+}
+
+#results {
+  text-align: right;
+  margin: 3% 0;
+}
+
+#text {
+  margin: -1% 0 3% 0;
+  line-height: 140%;
+  /* I'm getting mysterious things on Brave without it */
+  word-break: break-all;
+}
+
+#input {
+  width: 100%;
+  min-height: 2.5ex;
+  border-radius: inherit;
+  /* Transparent outline to play nice on :hover and :focus */
+  border: 1px solid transparent;
+  padding: 2%;
+  margin: 0 -2%;
+  line-height: 140%;
+  background-color: hsl(0, 0%, 95%);
+}
+
+#input:focus {
+  border: 1px solid hsl(0, 0%, 30%);
+  outline: none;
+}
+
+#start-button {
+  margin: 2% auto -2%;
+  padding: 2%;
+  border-radius: inherit;
+  color: inherit;
+  background-color: hsl(0, 0%, 80%);
+  /* Transparent outline to play nice on :focus */
+  border: 1px solid transparent;
+}
+
+#start-button:hover,
+#start-button:focus {
+  cursor: pointer;
+  border: 1px solid hsl(0, 0%, 30%);
+}
+
+.error {
+  color: hsl(357, 64%, 47%);
+}
+
+.next {
+  color: hsl(92, 68%, 40%);
+}
+
+#input.wrong {
+  background-color: hsla(9, 100%, 64%, 0.4);
+  border-color: hsl(0, 80%, 40%);
+}
+
+#input.done {
+  background-color: hsla(120, 100%, 25%, 0.2);
+  border-color: green;
+}

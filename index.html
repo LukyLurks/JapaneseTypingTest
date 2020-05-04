@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+  <head>
+    <meta charset="utf-8" />
+    <title>タイピング</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>タイピング練習</h1>
+    </header>
+
+    <main>
+      <div id="results">CPM (文字毎分): <span id="cpm">0</span></div>
+      <div id="typing-area">
+        <p id="text">
+          かな漢字変換つきタイピング練習ツールです。日本語入力モードをオンにして[スタート]ボタンをクリックしてください。この説明の代わりに例文が表示されます。
+        </p>
+        <div contenteditable id="input"></div>
+        <button id="start-button">スタート</button>
+      </div>
+    </main>
+
+    <footer>
+      <a id="github-link" href="https://github.com/lcyne/JapaneseTypingTest"
+        >github</a
+      >
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
